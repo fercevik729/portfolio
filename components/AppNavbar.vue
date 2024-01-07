@@ -1,7 +1,4 @@
 <script setup>
-import SignatureLight from "@/assets/svg/signature-light.svg";
-import SignatureDark from "@/assets/svg/signature-dark-2.svg";
-
 const colorMode = useColorMode();
 const darkMode = computed({
   get() {
@@ -21,12 +18,8 @@ const darkMode = computed({
     }"
   >
     <div class="p-4 flex justify-between">
-      <div class="justify-left flex items-center">
-        <img
-          :src="darkMode ? SignatureDark : SignatureLight"
-          alt="Signature"
-          style="width: 50%"
-        />
+      <div class="flex justify-left items-center">
+        <SignatureLogo /> 
         <UButton
           :icon="
             darkMode ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'
@@ -34,7 +27,7 @@ const darkMode = computed({
           :color="darkMode ? 'indigo' : 'yellow'"
           variant="ghost"
           aria-label="Toggle dark mode"
-          class="ml-4"
+          size="xl"
           @click="darkMode = !darkMode"
         />
       </div>
