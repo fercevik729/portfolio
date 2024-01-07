@@ -1,6 +1,8 @@
 <script setup>
-const colorMode = useColorMode();
+import SignatureLight from "@/assets/svg/signature-light.svg";
+import SignatureDark from "@/assets/svg/signature-dark-2.svg";
 
+const colorMode = useColorMode();
 const darkMode = computed({
   get() {
     return colorMode.value === "dark";
@@ -20,14 +22,11 @@ const darkMode = computed({
   >
     <div class="p-4 flex justify-between">
       <div class="justify-left flex items-center">
-        <h2
-          :class="{
-            'pl-8 text-xl text-gray-700 font-bold': !darkMode,
-            'pl-8 justify-left text-xl text-gray-300 font-bold': darkMode,
-          }"
-        >
-          Furkan Ercevik
-        </h2>
+        <img
+          :src="darkMode ? SignatureDark : SignatureLight"
+          alt="Signature"
+          style="width: 50%"
+        />
         <UButton
           :icon="
             darkMode ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'

@@ -1,10 +1,11 @@
 <template>
   <div v-if="loading" class="splash-screen">
     <client-only>
+      <img src="~/assets/svg/signature-light.svg" alt="Signature" />
       <Vue3Lottie
         :animation-data="splashAnimation"
-        :height="200"
-        :width="200"
+        :height="300"
+        :width="300"
       />
     </client-only>
   </div>
@@ -12,7 +13,7 @@
 
 <script lang="ts" setup>
 import { ref, onMounted } from "vue";
-import splashAnimation from "../assets/splashAnimation.json";
+import splashAnimation from "~/assets/animations/splashAnimation.json";
 const loading = ref(true);
 
 onMounted(() => {
@@ -38,5 +39,10 @@ onMounted(() => {
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
-
+.splash-screen p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 1rem;
+}
 </style>
