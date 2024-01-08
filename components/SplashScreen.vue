@@ -1,7 +1,7 @@
 <template>
   <div v-if="loading" class="splash-screen">
     <client-only>
-      <SignatureLogo :width="50"/>
+      <SignatureLogo :width="50" />
       <Vue3Lottie
         :animation-data="splashAnimation"
         :height="300"

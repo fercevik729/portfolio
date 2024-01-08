@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, computed } from 'vue';
+import { computed } from "vue";
 import SignatureLight from "@/assets/svg/signature-light.svg";
 import SignatureDark from "@/assets/svg/signature-dark.svg";
 
@@ -27,5 +27,4 @@ const { width } = defineProps({
     default: 50,
   },
 });
-
 </script>

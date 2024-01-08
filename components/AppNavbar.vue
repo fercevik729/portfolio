@@ -13,13 +13,13 @@ const darkMode = computed({
 <template>
   <nav
     :class="{
-      'border-b border-gray-300 bg-gray-200': !darkMode,
-      'border-b border-gray-700 bg-gray-800': darkMode,
+      'border-b border-gray-300 bg-blue-200': !darkMode,
+      'border-b border-gray-700 bg-blue-900': darkMode,
     }"
   >
     <div class="p-4 flex justify-between">
       <div class="flex justify-left items-center">
-        <SignatureLogo /> 
+        <SignatureLogo />
         <UButton
           :icon="
             darkMode ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'

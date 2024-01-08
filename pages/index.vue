@@ -1,5 +1,7 @@
 <template>
-  <div class="h-screen flex items-center justify-center bg-gray-300">
-    <main></main>
+  <div class="flex items-center justify-center bg-gray-300">
+    <main>
+      <HomeTimeline />
+    </main>
   </div>
 </template>
