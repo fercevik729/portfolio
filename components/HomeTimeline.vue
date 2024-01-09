@@ -1,17 +1,9 @@
 <!--Primary component for landing page-->
 <template>
   <div class="timeline">
-    <div class="image-container relative title">
-      <img
-        src="~/assets/images/background-dark.jpg"
-        class="bg-cover bg-no-repeat"
-      />
-      <h2
-        class="overlay-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-      >
-        I'm Furkan Ercevik
-      </h2>
-    </div>
+    <ClientOnly>
+      <ParallaxBanner />
+    </ClientOnly>
     <article
       v-for="(event, index) in events"
       :key="index"
