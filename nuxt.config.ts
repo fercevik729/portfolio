@@ -7,5 +7,16 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-  modules: ["@pinia/nuxt", "@nuxtjs/eslint-module", "@nuxt/ui"],
+  modules: [
+    "@pinia/nuxt",
+    "@nuxtjs/eslint-module",
+    "@nuxt/ui",
+    "@nuxtjs/google-fonts",
+  ],
+
+  googleFonts: {
+    families: {
+      Poppins: true,
+    },
+  },
 });

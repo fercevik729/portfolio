@@ -1,10 +1,29 @@
 <!--Primary component for landing page-->
 <template>
   <div class="timeline">
-    <img src="~/assets/images/background-dark.jpg" class="bg-cover bg-norepeat"/>
-    <article v-for="(event, index) in events" :key="index" class="event w-screen bg-blue-300 flex justify-center space-x-4 text-black p-8">
-      <h3>{{ event.title }}</h3>
-      <p>{{ event.description }}</p>
+    <div class="image-container relative title">
+      <img
+        src="~/assets/images/background-dark.jpg"
+        class="bg-cover bg-no-repeat"
+      />
+      <h2
+        class="overlay-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      >
+        I'm Furkan Ercevik
+      </h2>
+    </div>
+    <article
+      v-for="(event, index) in events"
+      :key="index"
+      class="event w-screen bg-blue-300 flex justify-center space-x-4 text-black p-8"
+    >
+      <section class="flex items-center">
+        <img src="~/assets/images/stock.jpg" class="w-20 h-20 mr-4" />
+        <div>
+          <h2>{{ event.title }}</h2>
+          <p>{{ event.description }}</p>
+        </div>
+      </section>
     </article>
   </div>
 </template>
@@ -56,13 +75,13 @@ const events = [
 
 <style>
 /* Custom fade-in animation */
-@media(prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .event {
     scale: 0.8;
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: entry 50px; 
+    animation-range: entry 50px;
   }
 }
 
@@ -71,5 +90,10 @@ const events = [
     scale: 1;
     opacity: 1;
   }
+}
+
+.title {
+  font-family: Poppins, sans-serif;
+  @apply text-6xl text-center text-white font-semibold;
 }
 </style>
