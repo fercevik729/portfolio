@@ -1,9 +1,7 @@
 <!--Primary component for landing page-->
 <template>
   <div class="timeline">
-    <ClientOnly>
-      <ParallaxBanner />
-    </ClientOnly>
+    <ParallaxBanner />
     <article
       v-for="(event, index) in events"
       :key="index"
@@ -84,8 +82,4 @@ const events = [
   }
 }
 
-.title {
-  font-family: Poppins, sans-serif;
-  @apply text-6xl text-center text-white font-semibold;
-}
 </style>
