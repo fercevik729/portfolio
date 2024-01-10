@@ -2,6 +2,7 @@
   <div class="max-h-screen flex items-center justify-center">
     <div
       class="overlay-text title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col"
+      :aria-label="`Hi, I'm Furkan Ercevik. I'm a${typedPhrase}`"
     >
       Hi, I'm Furkan Ercevik
       <span class="typewriter p-4">I'm a{{ typedPhrase }}</span>
