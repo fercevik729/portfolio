@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center bg-gray-300">
+  <div class="flex items-center justify-center">
     <main>
       <HomeTimeline />
     </main>

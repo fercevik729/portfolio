@@ -1,7 +1,7 @@
 <template>
   <div v-if="loading" class="splash-screen">
     <client-only>
-      <SignatureLogo :width="50" />
+      <SignatureLogo :width="20" />
       <Vue3Lottie
         :animation-data="splashAnimation"
         :height="300"
@@ -19,7 +19,7 @@ const loading = ref(true);
 onMounted(() => {
   setTimeout(() => {
     loading.value = false;
-  }, 2000);
+  }, 5000);
 });
 </script>
 
@@ -31,8 +31,8 @@ onMounted(() => {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: #fff;
   display: flex;
+  @apply dark:bg-black bg-white;
   flex-direction: column;
   justify-content: center;
   align-items: center;

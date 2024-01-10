@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden max-h-screen relative" :style="parallaxStyle">
+  <div class="max-h-screen flex items-center justify-center">
     <div
       class="overlay-text title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col"
     >
@@ -11,31 +11,6 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
-import DarkBackground from "@/assets/images/background-dark.jpg";
-import LightBackground from "@/assets/images/background-light.jpg";
-
-const colorMode = useColorMode();
-const darkMode = computed(() => {
-  return colorMode.value === "dark";
-});
-
-const imagePath = computed(() => {
-  return darkMode.value ? DarkBackground : LightBackground;
-});
-
-const parallaxStyle = computed(() => {
-  return {
-    /* The image used */
-    "background-image": `url("${imagePath.value}")`,
-    /* Set a specific height */
-    "min-height": "500px",
-    /* Create the parallax scrolling effect */
-    "background-attachment": "fixed",
-    "background-position": "center",
-    "background-repeat": "no-repeat",
-    "background-size": "cover",
-  };
-});
 
 const phrases = [" developer", "n engineer", " cat lover"];
 const currentPhraseIndex = ref(0);
@@ -68,14 +43,13 @@ onUnmounted(() => {
 
 <style>
 .title {
-  font-family: Poppins, sans-serif;
   letter-spacing: 0.1em; /* Adjusts the spacing between characters */
-  @apply text-6xl text-center text-white font-semibold;
+  @apply text-6xl text-center font-semibold;
 }
 
 .typewriter {
   overflow: hidden; /* Ensures the text is not visible outside the container */
-  border-right: 0.12em solid white; /* Creates the typewriter caret effect */
+  border-right: 0.12em solid; /* Creates the typewriter caret effect */
   white-space: nowrap; /* Keeps the text in a single line */
   margin: 0 auto; /* Centers the text horizontally */
   animation: blink-caret 0.75s infinite;
@@ -86,7 +60,7 @@ onUnmounted(() => {
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: #f3f5f4;
   }
 }
 </style>

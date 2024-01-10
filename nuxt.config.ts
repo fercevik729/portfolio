@@ -13,10 +13,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxtjs/google-fonts",
   ],
-
-  googleFonts: {
-    families: {
-      Poppins: true,
-    },
+  colorMode: {
+    classSuffix: "",
   },
 });
