@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.11.1",
+    "lorem-ipsum": "^2.0.8",
     "vue3-lottie": "^3.2.0"
   }
 }

@@ -1,7 +1,10 @@
 <template>
-  <div v-if="loading" class="splash-screen">
+  <div
+    v-if="loading"
+    class="splash-screen flex flex-col items-center justify-center"
+  >
     <client-only>
-      <SignatureLogo :width="20" />
+      <SignatureLogo :width="20" class="mb-[-95px]" />
       <Vue3Lottie
         :animation-data="splashAnimation"
         :height="300"
@@ -19,7 +22,7 @@ const loading = ref(true);
 onMounted(() => {
   setTimeout(() => {
     loading.value = false;
-  }, 5000);
+  }, 3000);
 });
 </script>
 

@@ -1,5 +1,8 @@
 <template>
-  <a :href="to" class="group transition duration-300 hover-underline-animation text-slate-500 hover:dark:text-white hover:text-black">
+  <a
+    :href="to"
+    class="group transition duration-300 hover-underline-animation text-slate-500 hover:dark:text-white hover:text-black"
+  >
     {{ label }}
     <span
       class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5"
@@ -24,11 +27,11 @@ const { label, to } = defineProps({
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  @apply text-slate-500
+  @apply text-slate-500;
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -44,5 +47,4 @@ const { label, to } = defineProps({
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 </style>

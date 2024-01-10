@@ -6,21 +6,24 @@
           <SignatureLogo />
           <UButton
             :ui="{
-                rounded: 'rounded-full',
-                }"
-                
+              rounded: 'rounded-full',
+            }"
             class="outline-none border-2 dark:border-gray-500 dark:hover:border-white hover:border-black"
             :color="darkMode ? 'gray' : 'white'"
             variant="ghost"
             aria-label="Toggle dark mode"
             size="xl"
             @click="darkMode = !darkMode"
-            >
+          >
             <i
-              :class="darkMode ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
+              :class="
+                darkMode
+                  ? 'i-heroicons-moon-20-solid'
+                  : 'i-heroicons-sun-20-solid'
+              "
               :color="darkMode ? 'black' : 'white'"
             />
-            </UButton>
+          </UButton>
         </div>
         <div class="flex items-center gap-4">
           <div v-for="link in links" :key="link.to">

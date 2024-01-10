@@ -1,7 +1,7 @@
 <template>
-  <div class="max-h-screen flex items-center justify-center">
+  <div class="max-h-screen flex items-center justify-center p-32">
     <div
-      class="overlay-text title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col"
+      class="title flex flex-col"
       :aria-label="`Hi, I'm Furkan Ercevik. I'm a${typedPhrase}`"
     >
       Hi, I'm Furkan Ercevik
@@ -43,11 +43,6 @@ onUnmounted(() => {
 </script>
 
 <style>
-.title {
-  letter-spacing: 0.1em; /* Adjusts the spacing between characters */
-  @apply text-6xl text-center font-semibold;
-}
-
 .typewriter {
   overflow: hidden; /* Ensures the text is not visible outside the container */
   border-right: 0.12em solid; /* Creates the typewriter caret effect */

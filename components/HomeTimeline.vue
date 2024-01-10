@@ -1,28 +1,20 @@
 <!--Primary component for landing page-->
 <template>
-  <div>
+  <div class="flex flex-col gap-64">
     <TitleBanner />
-
-    <!-- <article
-      v-for="(event, index) in events"
-      :key="index"
-      class="event w-screen flex justify-center space-x-4 p-8"
-    >
-      <section class="flex items-center">
-        <img src="~/assets/images/stock.jpg" class="w-20 h-20 mr-4" />
-        <div>
-          <h2>{{ event.title }}</h2>
-          <p>{{ event.description }}</p>
-        </div>
-      </section>
-    </article> -->
+    <SkillSection />
   </div>
 </template>
 
 <style>
+.title {
+  letter-spacing: 0.1em; /* Adjusts the spacing between characters */
+  @apply text-6xl text-center font-semibold;
+}
+
 /* Custom fade-in animation */
 @media (prefers-reduced-motion: no-preference) {
-  .event {
+  .fadeable {
     scale: 0.8;
     opacity: 0;
     animation: fade-in linear forwards;
