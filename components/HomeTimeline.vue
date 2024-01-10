@@ -81,5 +81,4 @@ const events = [
     opacity: 1;
   }
 }
-
 </style>
