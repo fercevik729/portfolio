@@ -1,6 +1,8 @@
 <template>
   <div>
-    <AppNavbar />
+    <ClientOnly>
+      <AppNavbar />
+    </ClientOnly>
     <SplashScreen />
     <slot />
   </div>

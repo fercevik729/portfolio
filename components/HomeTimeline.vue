@@ -1,6 +1,6 @@
 <!--Primary component for landing page-->
 <template>
-  <div class="flex flex-col md:gap-64">
+  <div class="flex flex-col items-center md:gap-64">
     <TitleBanner />
     <SkillSection />
     <RoundedButton v-if="showScrollTop" class="scroll-top" @click="scrollTop">
@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
 
 .title {
   letter-spacing: 0.1em;
-  @apply text-2xl sm:text-6xl text-center font-semibold;
+  @apply text-2xl md:text-6xl text-center font-semibold;
 }
 
 /* Custom fade-in animation */

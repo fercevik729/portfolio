@@ -1,26 +1,24 @@
 <template>
-  <div class="flex justify-center sm:justify-end fade mr-16">
-    <div class="flex flex-col items-center sm:items-end gap-4 mb-">
-      <h2 class="title md:mr-20">What I Do</h2>
-      <p class="skill-text text-sm sm:text-2xl">
-        Curious backend developer that dabbles in full stack development and AI
-        projects.
-      </p>
+  <div class="flex flex-col fade items-center md:items-end gap-4 mb-10">
+    <h2 class="title mr-1">What I Do</h2>
+    <p class="skill-text text-sm md:text-2xl">
+      Curious backend developer that dabbles in full stack development and AI
+      projects.
+    </p>
 
-      <div class="flex flex-col justify-end text-sm sm:text-xl">
-        <ListElement
-          text="Develop fault-tolerant, scalable, and concurrent backend services"
-        />
-        <ListElement
-          text="Integrate with major cloud providers and services such as AWS, Azure, and Vercel via CI/CD"
-        />
-        <ListElement
-          text="Create highly interactive user interfaces in full stack web applications"
-        />
-      </div>
-      <SkillsCarousel />
-      <SkillsCarousel :reverse="true" :icons="moreIcons" />
+    <div class="flex flex-col justify-end text-sm md:text-xl">
+      <ListElement
+        text="Develop fault-tolerant, scalable, and concurrent backend services"
+      />
+      <ListElement
+        text="Integrate with major cloud providers and services such as AWS, Azure, and Vercel via CI/CD"
+      />
+      <ListElement
+        text="Create highly interactive user interfaces in full stack web applications"
+      />
     </div>
+    <SkillsCarousel />
+    <SkillsCarousel :reverse="true" :icons="moreIcons" />
   </div>
 </template>
 
@@ -43,6 +41,6 @@ const moreIcons = [
 
 <style>
 .skill-text {
-  @apply text-center max-w-64 md:max-w-full sm:w-full text-wrap;
+  @apply text-center max-w-64 md:max-w-full md:w-full text-wrap;
 }
 </style>

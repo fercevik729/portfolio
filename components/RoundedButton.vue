@@ -7,7 +7,7 @@
     variant="ghost"
     color="white"
     :to="to"
-    :target="newTab && '_blank'"
+    :target="newTab ? '_blank' : '_self'"
   >
     <span v-if="text.length > 0" class="button-text">
       {{ text }}
