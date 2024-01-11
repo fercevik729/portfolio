@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-end fade mr-16">
-    <div class="flex flex-col items-end gap-4">
+    <div class="flex flex-col items-end gap-4 mb-10">
       <h2 class="title">What I Do</h2>
       <p class="text-2xl">
         Curious backend developer that dabbles in full stack development and AI
@@ -20,10 +20,26 @@
         </li>
       </ul>
       <SkillsCarousel />
+      <SkillsCarousel :reverse="true" :icons="moreIcons" />
     </div>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const moreIcons = [
+  "mdi:language-javascript",
+  "mdi:react",
+  "mdi:vuejs",
+  "mdi:language-html5",
+  "mdi:language-css3",
+  "mdi:language-typescript",
+  "mdi:tailwind",
+  "simple-icons:prisma",
+  "mdi:graphql",
+  "tabler:brand-yarn",
+  "tabler:brand-nuxt",
+  "tabler:brand-nextjs",
+];
+</script>
 
 <style></style>

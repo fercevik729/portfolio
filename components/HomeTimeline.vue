@@ -3,7 +3,7 @@
   <div class="flex flex-col gap-64">
     <TitleBanner />
     <SkillSection />
-    <RoundedButton v-show="showScrollTop" class="scroll-top" @click="scrollTop">
+    <RoundedButton v-if="showScrollTop" class="scroll-top" @click="scrollTop">
       <Icon name="i-heroicons-arrow-up"></Icon>
     </RoundedButton>
   </div>

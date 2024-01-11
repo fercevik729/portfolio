@@ -8,11 +8,11 @@
       <span class="typewriter p-4">I'm a{{ typedPhrase }}</span>
 
       <div class="flex flex-row">
-        <RoundedButton text="Resume">
-          <Icon name="material-symbols:download" />
+        <RoundedButton text="Resume" to="/resume" class="pl-5 pr-5">
+          <Icon name="material-symbols:lab-profile" />
         </RoundedButton>
 
-        <RoundedButton text="LinkedIn">
+        <RoundedButton text="LinkedIn" to="https://linkedin.com/in/furkan-tarik-ercevik" :new-tab="true" class="pl-5 pr-5">
           <Icon name="ion:logo-linkedin" />
         </RoundedButton>
       </div>
