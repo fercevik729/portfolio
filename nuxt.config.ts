@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@nuxtjs/eslint-module",
     "@nuxt/ui",
     "@nuxtjs/google-fonts",
+    "nuxt-icon",
   ],
   colorMode: {
     classSuffix: "",

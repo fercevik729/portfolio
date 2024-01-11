@@ -1,11 +1,21 @@
 <template>
-  <div class="max-h-screen flex items-center justify-center p-32">
+  <div class="max-h-screen flex items-center justify-center p-32 pb-44">
     <div
-      class="title flex flex-col"
+      class="title flex flex-col items-center"
       :aria-label="`Hi, I'm Furkan Ercevik. I'm a${typedPhrase}`"
     >
       Hi, I'm Furkan Ercevik
       <span class="typewriter p-4">I'm a{{ typedPhrase }}</span>
+
+      <div class="flex flex-row">
+        <RoundedButton text="Resume">
+          <Icon name="material-symbols:download" />
+        </RoundedButton>
+
+        <RoundedButton text="LinkedIn">
+          <Icon name="ion:logo-linkedin" />
+        </RoundedButton>
+      </div>
     </div>
   </div>
 </template>

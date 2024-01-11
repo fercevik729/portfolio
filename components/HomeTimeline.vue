@@ -3,10 +3,40 @@
   <div class="flex flex-col gap-64">
     <TitleBanner />
     <SkillSection />
+    <RoundedButton v-show="showScrollTop" class="scroll-top" @click="scrollTop">
+      <Icon name="i-heroicons-arrow-up"></Icon>
+    </RoundedButton>
   </div>
 </template>
 
+<script setup lang="ts">
+import { ref } from "vue";
+const showScrollTop = ref(false);
+
+const handleScroll = () => {
+  showScrollTop.value = window.scrollY > 100;
+};
+
+const scrollTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+</script>
+
 <style>
+.scroll-top {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
 .title {
   letter-spacing: 0.1em; /* Adjusts the spacing between characters */
   @apply text-6xl text-center font-semibold;
@@ -14,7 +44,7 @@
 
 /* Custom fade-in animation */
 @media (prefers-reduced-motion: no-preference) {
-  .fadeable {
+  .fade {
     scale: 0.8;
     opacity: 0;
     animation: fade-in linear forwards;

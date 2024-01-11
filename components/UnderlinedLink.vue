@@ -1,7 +1,7 @@
 <template>
   <a
     :href="to"
-    class="group transition duration-300 hover-underline-animation text-slate-500 hover:dark:text-white hover:text-black"
+    class="underlined-link group transition duration-300 hover-underline-animation text-slate-500 hover:dark:text-white hover:text-black"
   >
     {{ label }}
     <span
@@ -24,6 +24,10 @@ const { label, to } = defineProps({
 </script>
 
 <style>
+.underlined-link {
+  letter-spacing: 0.02em;
+}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -40,7 +44,7 @@ const { label, to } = defineProps({
   left: 0;
   @apply bg-black dark:bg-white;
   transform-origin: bottom right;
-  transition: transform 0.15s ease-out;
+  transition: transform 0.35s ease-out;
 }
 
 .hover-underline-animation:hover::after {
