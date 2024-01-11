@@ -10,6 +10,12 @@
 
 <script lang="ts" setup>
 useHead({
-  title: "Furkan's Portfolio",
+  title: "Furkan Ercevik",
+  meta: [
+    {
+      name: "About Me | Furkan Ercevik",
+      content: "Furkan Ercevik's Portfolio and Blog",
+    },
+  ],
 });
 </script>
