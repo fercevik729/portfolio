@@ -41,6 +41,6 @@ const moreIcons = [
 
 <style>
 .skill-text {
-  @apply text-center max-w-64 md:max-w-full md:w-full text-wrap;
+  @apply max-w-64 md:max-w-full md:w-full text-wrap;
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col justify-center">
+  <div
+    class="flex flex-col justify-center dark:bg-slate-500 dark:md:bg-inherit"
+  >
     <embed :src="Resume" type="application/pdf" width="100%" height="600px" />
 
     <div class="flex flex-row justify-center">

@@ -5,6 +5,7 @@
     </ClientOnly>
     <SplashScreen />
     <slot />
+    <AppFooter />
   </div>
 </template>
 

@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
 }
 
 .title {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   @apply text-2xl md:text-6xl text-center font-semibold;
 }
 

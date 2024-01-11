@@ -1,5 +1,5 @@
 <template>
-  <span class="flex items-center mb-4">
+  <span class="flex items-start mb-4">
     <i class="i-heroicons-arrow-right-circle hidden md:inline-block"></i>
     <p class="ml-2 inline-block skill-text">{{ text }}</p>
   </span>
