@@ -31,13 +31,10 @@ const { text, to, newTab } = defineProps({
     default: false,
   },
 });
-
 </script>
 <style>
-
 .button-text {
   letter-spacing: 0.02em;
   @apply text-lg;
 }
-
 </style>

@@ -1,24 +1,23 @@
 <template>
-  <div class="flex justify-end fade mr-16">
-    <div class="flex flex-col items-end gap-4 mb-10">
-      <h2 class="title">What I Do</h2>
-      <p class="text-2xl">
+  <div class="flex justify-center sm:justify-end fade mr-16">
+    <div class="flex flex-col items-center sm:items-end gap-4 mb-">
+      <h2 class="title md:mr-20">What I Do</h2>
+      <p class="skill-text text-sm sm:text-2xl">
         Curious backend developer that dabbles in full stack development and AI
-        projects
+        projects.
       </p>
-      <ul class="text-xl">
-        <li class="flex flex-col justify-start gap-2">
-          <ListElement
-            text="Develop fault-tolerant, scalable, and concurrent backend services"
-          />
-          <ListElement
-            text="Integrate with major cloud providers and services such as AWS, Azure, and Vercel via CI/CD"
-          />
-          <ListElement
-            text="Create highly interactive user interfaces in full stack web applications"
-          />
-        </li>
-      </ul>
+
+      <div class="flex flex-col justify-end text-sm sm:text-xl">
+        <ListElement
+          text="Develop fault-tolerant, scalable, and concurrent backend services"
+        />
+        <ListElement
+          text="Integrate with major cloud providers and services such as AWS, Azure, and Vercel via CI/CD"
+        />
+        <ListElement
+          text="Create highly interactive user interfaces in full stack web applications"
+        />
+      </div>
       <SkillsCarousel />
       <SkillsCarousel :reverse="true" :icons="moreIcons" />
     </div>
@@ -42,4 +41,8 @@ const moreIcons = [
 ];
 </script>
 
-<style></style>
+<style>
+.skill-text {
+  @apply text-center max-w-64 md:max-w-full sm:w-full text-wrap;
+}
+</style>

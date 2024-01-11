@@ -1,8 +1,10 @@
 <template>
-  <div class="flex items-center">
-    <i class="i-heroicons-arrow-right"></i>
-    <p class="ml-2">{{ text }}</p>
-  </div>
+  <span class="flex items-center mb-4">
+    <i
+      class="i-heroicons-arrow-right-circle hidden md:inline-block"
+    ></i>
+    <p class="ml-2 inline-block skill-text">{{ text }}</p>
+  </span>
 </template>
 
 <script lang="ts" setup>

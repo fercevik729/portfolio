@@ -9,10 +9,15 @@
 
       <div class="flex flex-row">
         <RoundedButton text="Resume" to="/resume" class="pl-5 pr-5">
-          <Icon name="material-symbols:lab-profile" />
+          <Icon name="mdi:document" />
         </RoundedButton>
 
-        <RoundedButton text="LinkedIn" to="https://linkedin.com/in/furkan-tarik-ercevik" :new-tab="true" class="pl-5 pr-5">
+        <RoundedButton
+          text="LinkedIn"
+          to="https://linkedin.com/in/furkan-tarik-ercevik"
+          :new-tab="true"
+          class="pl-5 pr-5"
+        >
           <Icon name="ion:logo-linkedin" />
         </RoundedButton>
       </div>

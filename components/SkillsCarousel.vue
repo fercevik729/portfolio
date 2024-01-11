@@ -29,7 +29,7 @@ const { icons, reverse } = defineProps({
       "mdi:microsoft-azure",
       "mdi:aws",
       "mdi:git",
-      "mdi:linux",
+      "uil:linux",
       "mdi:docker",
       "mdi:nodejs",
       "mdi:kubernetes",
@@ -37,6 +37,7 @@ const { icons, reverse } = defineProps({
       "fa6-brands:golang",
       "mdi:language-python",
       "bxl:postgresql",
+      "mdi:language-java",
     ],
   },
   reverse: {
