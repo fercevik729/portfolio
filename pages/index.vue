@@ -9,12 +9,6 @@
         color="orange"
         class="max-w-2xl mx-auto"
         description="This site is currently under construction. Please check back later for more content!"
-        :close-button="{
-          icon: 'i-heroicons-x-mark-20-solid',
-          color: 'white',
-          variant: 'link',
-          padded: false,
-        }"
         @click="closeAlert"
       />
     </Transition>

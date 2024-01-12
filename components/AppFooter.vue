@@ -1,12 +1,15 @@
 <template>
-  <footer class="border-t border-slate-200 dark:border-slate-700 pb-8 pt-36">
+  <footer
+    class="border-t border-slate-200 dark:border-slate-700 pb-8 pt-36 bg-slate-300 dark:bg-black"
+  >
     <div class="container mx-auto">
       <div class="flex justify-items-center">
         <div class="grid grid-cols-3 gap-4 sm:gap-8 space-x-4 ml-5">
           <div>
             <h3 class="text-md sm:text-2xl">Furkan Ercevik</h3>
             <p class="footer-text mt-10">
-              Curious developer focused on cloud and AI democratization
+              Lifelong learner and builder. Cogito ergo facio. I think therefore
+              I make.
             </p>
             <SignatureLogo :width="60" />
           </div>
@@ -30,7 +33,7 @@
               v-for="link in sitemapLinks"
               :key="link.to"
               :label="link.label"
-              class="site-link"
+              class="footer-link"
               :to="link.to"
             />
           </div>
