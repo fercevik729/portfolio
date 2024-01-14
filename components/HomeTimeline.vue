@@ -26,7 +26,7 @@ onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
 
-onBeforeUnmount(() => {
+onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 </script>

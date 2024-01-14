@@ -3,7 +3,7 @@
     :ui="{
       rounded: 'rounded-full',
     }"
-    class="flex flex-row border outline-none items-center pl-3 pr-3 gap-1 bg-slate-200 dark:bg-slate-900 p-3 m-6 maxw-32 text-black dark:text-white hover:dark:border-white hover:border-black"
+    class="flex flex-row border outline-none items-center pl-3 pr-3 gap-1 hover:animate-pulse bg-slate-200 dark:bg-slate-900 p-3 m-6 maxw-32 text-black dark:text-white hover:dark:border-white hover:border-black"
     variant="ghost"
     color="white"
     :to="to"

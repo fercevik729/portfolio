@@ -1,5 +1,8 @@
 <template>
-  <div class="flex flex-col fade items-center md:items-end gap-4 mb-10">
+  <div
+    class="flex flex-col items-center md:items-end gap-4 mb-10"
+    data-aos="fade-left"
+  >
     <h2 class="title mr-1">What I Do</h2>
     <p class="skill-text text-sm md:text-2xl">
       Curious backend developer that dabbles in full stack development and AI
@@ -17,8 +20,8 @@
         text="Create highly interactive user interfaces in full stack web applications"
       />
     </div>
-    <SkillsCarousel />
-    <SkillsCarousel :reverse="true" :icons="moreIcons" />
+    <SkillCarousel />
+    <SkillCarousel :reverse="true" :icons="moreIcons" />
   </div>
 </template>
 

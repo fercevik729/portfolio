@@ -13,8 +13,16 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxtjs/google-fonts",
     "nuxt-icon",
+    "nuxt-aos",
   ],
   colorMode: {
     classSuffix: "",
+  },
+  css: ["animate.css/animate.min.css"],
+  aos: {
+    useClassNames: true,
+    easing: "ease-in-out",
+    once: false,
+    mirror: false,
   },
 });
