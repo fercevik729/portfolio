@@ -3,6 +3,7 @@
   <div class="flex flex-col items-center md:gap-64">
     <TitleBanner />
     <SkillSection />
+    <SkillMeters />
     <RoundedButton v-if="showScrollTop" class="scroll-top" @click="scrollTop">
       <Icon name="i-heroicons-arrow-up"></Icon>
     </RoundedButton>
@@ -37,6 +38,7 @@ onBeforeUnmount(() => {
   left: 0px;
 }
 
+h2,
 .title {
   letter-spacing: 0.02em;
   @apply text-2xl md:text-6xl text-center font-semibold;

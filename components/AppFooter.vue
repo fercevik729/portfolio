@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="border-t border-slate-200 dark:border-slate-700 pb-8 pt-36 bg-slate-300 dark:bg-black"
+    class="border-t border-slate-200 dark:border-slate-800 pb-8 pt-36 bg-slate-300 dark:bg-black"
   >
     <div class="container mx-auto">
       <div class="flex justify-items-center">

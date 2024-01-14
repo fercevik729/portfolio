@@ -5987,19 +5987,9 @@ nuxi@^3.10.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
-nuxt-icon@^0.6.7:
+nuxt-icon@^0.6.7, nuxt-icon@^0.6.8:
   version "0.6.8"
   resolved "https://registry.npmjs.org/nuxt-icon/-/nuxt-icon-0.6.8.tgz"
-  integrity sha512-6eWlNOb6Uvp63uXFdhcmsB1JlubDv76Pot/VwmIu0yJxDYhwytbnv3WAjw2khl2l7W/65V4eMGIEeX9C5Ahxng==
-  dependencies:
-    "@iconify/collections" "^1.0.374"
-    "@iconify/vue" "^4.1.1"
-    "@nuxt/devtools-kit" "^1.0.6"
-    "@nuxt/kit" "^3.9.0"
-
-nuxt-icon@^0.6.8:
-  version "0.6.8"
-  resolved "https://registry.yarnpkg.com/nuxt-icon/-/nuxt-icon-0.6.8.tgz#15c36e92e4baa03adf322938dba86bb872b6251f"
   integrity sha512-6eWlNOb6Uvp63uXFdhcmsB1JlubDv76Pot/VwmIu0yJxDYhwytbnv3WAjw2khl2l7W/65V4eMGIEeX9C5Ahxng==
   dependencies:
     "@iconify/collections" "^1.0.374"
