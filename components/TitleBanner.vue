@@ -1,5 +1,7 @@
 <template>
-  <div class="max-h-screen flex items-center justify-center p-32 pb-44">
+  <div
+    class="max-h-screen flex items-center justify-center p-16 animate__animated animate__fadeInDown animate__delay-2s"
+  >
     <div
       class="title flex flex-col items-center"
       :aria-label="`Hi, I'm Furkan Ercevik. I'm a${typedPhrase}`"

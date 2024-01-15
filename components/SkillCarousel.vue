@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-slate-200 dark:bg-slate-900 w-[800px] inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+    class="bg-slate-200 dark:bg-slate-900 w-1/6 md:w-7/12 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
   >
     <ul
       class="flex items-center justify-center sm:justify-start [&_li]:mx-8 p-2"

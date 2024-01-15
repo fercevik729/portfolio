@@ -1,12 +1,12 @@
 <template>
   <div
-    class="flex flex-col fade items-center md:items-start w-2/3 px-20 mb-10"
+    class="flex flex-col items-center md:items-start w-2/3 px-20 mb-10"
     data-aos="fade-right"
   >
     <h2>Proficiency</h2>
     <template v-for="s in skills" :key="s.name">
-      <h3 class="my-5">{{ s.name }}</h3>
-      <UMeter :value="s.value" size="2xl" class="mb-5" />
+      <h4 class="my-5">{{ s.name }}</h4>
+      <UMeter :value="s.value" size="xl" class="mb-5" />
     </template>
   </div>
 </template>
@@ -19,7 +19,7 @@ const skills = [
   },
   {
     name: "Backend",
-    value: 70,
+    value: 85,
   },
   {
     name: "Cloud and DevOps",

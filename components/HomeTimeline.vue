@@ -1,9 +1,10 @@
 <!--Primary component for landing page-->
 <template>
-  <div class="flex flex-col items-center md:gap-64">
+  <div class="flex flex-col gap-16 md:gap-32 items-center md:items-stretch">
     <TitleBanner />
     <SkillSection />
-    <SkillMeters />
+    <SkillProficiency />
+    <EducationSection />
     <RoundedButton v-if="showScrollTop" class="scroll-top" @click="scrollTop">
       <Icon name="i-heroicons-arrow-up"></Icon>
     </RoundedButton>
@@ -42,6 +43,11 @@ h2,
 .title {
   letter-spacing: 0.02em;
   @apply text-2xl md:text-6xl text-center font-semibold;
+}
+
+h3 {
+  letter-spacing: 0.02em;
+  @apply text-xl md:text-4xl text-center font-semibold;
 }
 
 /* Custom fade-in animation */

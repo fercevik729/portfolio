@@ -1,15 +1,14 @@
 <template>
   <div
-    class="flex flex-col items-center md:items-end gap-4 mb-10"
+    class="flex flex-col items-center md:items-end gap-4 pr-20"
     data-aos="fade-left"
   >
     <h2 class="title mr-1">What I Do</h2>
-    <p class="skill-text text-sm md:text-2xl">
-      Curious backend developer that dabbles in full stack development and AI
-      projects.
-    </p>
-
     <div class="flex flex-col justify-end text-sm md:text-xl">
+      <p class="skill-text text-sm md:text-2xl mb-5 ml-2">
+        Curious backend developer that dabbles in full stack development and AI
+        projects.
+      </p>
       <ListElement
         text="Develop fault-tolerant, scalable, and concurrent backend services"
       />
@@ -43,7 +42,7 @@ const moreIcons = [
 </script>
 
 <style>
-.skill-text {
+p {
   @apply max-w-64 md:max-w-full md:w-full text-wrap;
 }
 </style>
