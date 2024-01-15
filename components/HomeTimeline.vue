@@ -1,6 +1,6 @@
 <!--Primary component for landing page-->
 <template>
-  <div class="flex flex-col gap-16 md:gap-32 items-center md:items-stretch">
+  <div class="flex flex-col gap-16 md:gap-64 items-center md:items-stretch">
     <TitleBanner />
     <SkillSection />
     <SkillProficiency />
