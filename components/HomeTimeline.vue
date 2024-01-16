@@ -5,6 +5,7 @@
     <SkillSection />
     <SkillProficiency />
     <EducationSection />
+    <ExperienceSection />
     <RoundedButton v-if="showScrollTop" class="scroll-top" @click="scrollTop">
       <Icon name="i-heroicons-arrow-up"></Icon>
     </RoundedButton>

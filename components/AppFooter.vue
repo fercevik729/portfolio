@@ -46,6 +46,10 @@
 <script lang="ts" setup>
 const sitemapLinks = [
   {
+    label: "Experience",
+    to: "#experience",
+  },
+  {
     label: "Projects",
     to: "/projects",
   },
@@ -56,10 +60,6 @@ const sitemapLinks = [
   {
     label: "Blog",
     to: "/blog",
-  },
-  {
-    label: "About",
-    to: "/about",
   },
 ];
 </script>

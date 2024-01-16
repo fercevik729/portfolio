@@ -25,7 +25,7 @@
           />
         </UButton>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-8">
         <div v-for="link in links" :key="link.to">
           <UnderlinedLink :label="link.label" :to="link.to" />
         </div>
@@ -65,16 +65,20 @@ const links = [
     to: "/",
   },
   {
+    label: "Experience",
+    to: "#experience",
+  },
+  {
     label: "Projects",
     to: "/projects",
   },
   {
-    label: "Blog",
-    to: "/blog",
+    label: "Resume",
+    to: "/resume",
   },
   {
-    label: "About",
-    to: "/about",
+    label: "Blog",
+    to: "/blog",
   },
 ];
 </script>
