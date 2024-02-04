@@ -14,14 +14,17 @@
         <p>Golang Software Engineering Intern | Culver City, CA</p>
         <p>September 2023 - Present</p>
         <p>
-          Designing a fault-tolerant distributed systems application for cloud archive management
+          Designing a fault-tolerant distributed systems application for cloud
+          archive management
         </p>
         <p>
-          Creating gRPC and OpenAPI servers to function as the frontend interface of the application.
+          Creating gRPC and OpenAPI servers to function as the frontend
+          interface of the application.
         </p>
         <p>
-          Contributed to the development of an internal Azure library to facilitate key features
-within the Azure Functions project, and migrated older capabilities.
+          Contributed to the development of an internal Azure library to
+          facilitate key features within the Azure Functions project, and
+          migrated older capabilities.
         </p>
       </div>
     </div>
