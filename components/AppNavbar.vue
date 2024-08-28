@@ -70,15 +70,11 @@ const links = [
   },
   {
     label: "Projects",
-    to: "/projects",
+    to: "https://github.com/fercevik729",
   },
   {
     label: "Resume",
     to: "/resume",
-  },
-  {
-    label: "Blog",
-    to: "/blog",
   },
 ];
 </script>
